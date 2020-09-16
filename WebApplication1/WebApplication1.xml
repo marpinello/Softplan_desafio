@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication1.Controllers.MainController">
+            <summary>
+            Controller for API 1 endpoints.
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Controllers.MainController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            RateController constructor.
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Controllers.MainController.GetInterestRate">
+            <summary>
+            Get interest rate.
+            </summary>
+            <returns>the interest rate.</returns>
+        </member>
+        <member name="T:WebApplication1.Startup">
+            <summary>
+            startup class.
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            startup class constructor.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:WebApplication1.Startup.Configuration">
+            <summary>
+            configuration instance.
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            use this method to configure services.
+            </summary>
+            <param name="services">an instance of services.</param>
+        </member>
+        <member name="M:WebApplication1.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            method to configure application.
+            </summary>
+            <param name="app">an app instance.</param>
+            <param name="env">an env instance.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication2</name>
+    </assembly>
+    <members>
+        <member name="T:WebApplication2.Controllers.MainController">
+            <summary>
+            Controller for API 2 endpoints.
+            </summary>
+        </member>
+        <member name="M:WebApplication2.Controllers.MainController.#ctor(Microsoft.Extensions.Logging.ILogger{WebApplication2.Controllers.MainController},WebApplication2.Interfaces.IApp2Service)">
+            <summary>
+            CalcRateController constructor.
+            </summary>
+        </member>
+        <member name="M:WebApplication2.Controllers.MainController.ShowMeTheCode">
+            <summary>
+            Shows the repository URL of this project.
+            </summary>
+            <returns>the URL.</returns>
+        </member>
+        <member name="M:WebApplication2.Controllers.MainController.CalculateInterestRate(System.Decimal,System.Int32)">
+            <summary>
+            Calculate a final ammount from an interest rate upon an initial ammount in a period of time.
+            </summary>
+            <param name="valorInicial">initial ammount.</param>
+            <param name="meses">number of months.</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApplication2.Interfaces.IApp2Service">
+            <summary>
+            interface for service methods.
+            </summary>
+        </member>
+        <member name="M:WebApplication2.Interfaces.IApp2Service.ShowMeTheCode">
+            <summary>
+            get the project repository URL.
+            </summary>
+            <returns>the project repository URL.</returns>
+        </member>
+        <member name="M:WebApplication2.Interfaces.IApp2Service.TruncateWithDecimalPlaces(System.Decimal)">
+            <summary>
+            Truncates a value, based on a specific quantity of decimal places.
+            </summary>
+            <param name="value">the value to be truncated.</param>
+            <returns>the truncated value.</returns>
+        </member>
+        <member name="M:WebApplication2.Interfaces.IApp2Service.GetInterestRate">
+            <summary>
+            gets the interest rate from API 1.
+            </summary>
+            <returns>the interest rate.</returns>
+        </member>
+        <member name="M:WebApplication2.Interfaces.IApp2Service.CalculateFinalAmmount(System.Decimal,System.Int32)">
+            <summary>
+            Calculates the final ammount of a given initial ammount during a period of time.
+            </summary>
+            <param name="initialAmmount">the initial ammount.</param>
+            <param name="periodInMonths">the period in months.</param>
+            <returns>the calculated final ammount.</returns>
+        </member>
+        <member name="T:WebApplication2.Startup">
+            <summary>
+            startup class.
+            </summary>
+        </member>
+        <member name="M:WebApplication2.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            startup class constructor.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:WebApplication2.Startup.Configuration">
+            <summary>
+            configuration instance.
+            </summary>
+        </member>
+        <member name="M:WebApplication2.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            use this method to configure services.
+            </summary>
+            <param name="services">an instance of services.</param>
+        </member>
+        <member name="M:WebApplication2.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            method to configure application.
+            </summary>
+            <param name="app">an app instance.</param>
+            <param name="env">an env instance.</param>
+        </member>
+    </members>
+</doc>
